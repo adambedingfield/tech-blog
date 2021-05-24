@@ -1,0 +1,10 @@
+<h2 class="page-title">Homepage</h2>
+<div>
+{{#each posts as |post|}}
+
+{{> post-info post }}
+</div>
+
+{{else}}
+<h2>there are currently no posts</h2>
+{{/each}}

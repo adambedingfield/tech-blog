@@ -1,0 +1,153 @@
+.color-blue {
+    background-color: cornflowerblue;
+}
+
+.header-menu {
+    text-align: right;
+}
+
+.company-title {
+    padding-left: 10px;
+    background-color: cornflowerblue;
+    margin-top: 0;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    color: white;
+    text-shadow: darkblue 2px 2px;
+}
+
+.post-container {
+    padding-left: 10px;
+    border-bottom: solid 1px black;
+    padding-bottom: 10px;
+}
+
+.post-title {
+    text-decoration: underline;
+    margin-bottom: 1px;
+    font-size: 28px;
+    margin-top: 0;
+}
+
+.post-description {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.form-spacing {
+    padding-left: 10px;
+}
+
+.bar-fixed {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+}
+
+.page-title {
+    text-align: center;
+    font-size: 36px;
+    border-bottom: 3px black solid;
+    padding-bottom: 8px;
+    margin-bottom: 2px;
+    margin-top: 0;
+    background-color: cornflowerblue;
+    color: white;
+    text-shadow: 2px 2px darkblue;
+}
+
+.create-title {
+    width: 200px;
+}
+
+.create-description {
+    width: 500px;
+}
+
+footer {
+    text-align: center;
+    background-color: cornflowerblue;
+    color: white;
+    text-shadow: 1px 1px darkblue;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 18px;
+    border-top: 2px solid black;
+}
+
+footer p {
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.edit-btn-holder {
+    border-bottom: 1px solid black;
+}
+
+.edit-btn {
+    background-color: cornflowerblue;
+    margin-left: 20px;
+    color: white;
+    margin-top: 5px;
+}
+
+.create-btn {
+    background-color: green;
+    color: white;
+}
+
+.menu-right-color {
+    color: white;
+    text-shadow: 1px 1px darkblue;
+}
+
+.menu-right-color:hover {
+    color: darkblue;
+}
+
+.menu-list-item {
+    color: darkblue;
+}
+
+.comments {
+    margin-top: 10px;
+    border-bottom: 1px black solid;
+    padding-bottom: 10px;
+    padding-top: 8px;
+}
+
+.comments p {
+    color: blue;
+    border-top: 1px rgb(214, 214, 214) solid;
+    padding-top: 4px;
+    color: slategray;
+}
+
+.comment-btn {
+    color: white;
+    background-color: cornflowerblue;
+}
+
+.save-btn {
+    background-color: darkgreen;
+    color: white;
+}
+
+.delete-btn {
+    background-color: red;
+    color: black;
+}
+
+.login-btn {
+    background-color: cornflowerblue;
+    color: white;
+}
+
+.signup-btn {
+    background-color: cornflowerblue;
+    color: white;
+    margin-bottom: 10px;
+}

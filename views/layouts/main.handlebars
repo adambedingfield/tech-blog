@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Tech Blog</title>
+  <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.6/build/pure-min.css" integrity="sha384-Uu6IeWbM+gzNVXJcM9XV3SohHtmWE+3VGi496jvgX1jyvDTXfdK+rfZc8C1Aehk5" crossorigin="anonymous">
+  <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+
+<body>
+    <div class="pure-g color-blue">
+    <h1 class="pure-u-1-2 company-title">The Tech Blog</h1>
+    <header class="header-menu pure-u-1-2">
+        <div class="pure-menu pure-menu-horizontal bar-fixed">
+            <ul class="pure-menu-list">
+                <li class="pure-menu-item pure-menu">
+                    <a href="/" class="pure-menu-link menu-right-color">Home</a>
+                </li>
+                {{#if loggedIn}}
+                <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
+                    <a href="#" id="menuLink1" class="pure-menu-link menu-right-color">Settings</a>
+                    <ul class="pure-menu-children">
+                        <li class="pure-menu-item">
+                            <a href="/dashboard" class="pure-menu-link menu-list-item">My Posts</a>
+                        </li>
+                        <li class="pure-menu-item">
+                            <a href="/dashboard/create" class="pure-menu-link menu-list-item">Create Post</a>
+                        </li>
+                        <li class="pure-menu-item">
+                            <a href="/logout" class="pure-menu-link menu-list-item" id="logout">Logout</a>
+                        </li>
+                        {{else}}
+                        <li class="pure-menu-item menu-right-color">
+                            <a href="/login" class="pure-menu-link menu-right-color">Login</a>
+                        </li>
+                    </ul>
+                </li>
+                {{/if}}
+            </ul>
+        </div>
+    </header>
+</div>
+
+    <main>
+        {{{ body }}}
+    </main>
+<footer>
+    <p>The Tech Blog</p>
+    <p>Minimal Display, Maximum News</p>
+</footer>
+
+{{#if loggedIn}}
+<script src="/javascript/logout.js"></script>
+{{/if}}
+</body>
+
+</html>

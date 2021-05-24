@@ -1,0 +1,16 @@
+<h2 class="page-title">Your Posts</h2>
+<a href="/dashboard/create/"><button id="create-post" class="pure-button create-btn">Create New Post</button></a>
+{{#if posts.length}}
+{{#each posts as |post|}}
+<div class="pure-g">
+  <div class="pure-u-1-2">
+  {{> post-info post}}
+  </div>
+  <div class="pure-u-1-2 edit-btn-holder">
+  <a href="/dashboard/edit/{{post.id}}"><button class="pure-button edit-btn">Edit</button></a>
+  </div>
+</div>
+{{/each}}
+{{else}}
+<h6 class="pb-4 has-text-centered is-italic">you do not currently have any posts</h6>
+{{/if}}

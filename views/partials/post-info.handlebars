@@ -1,0 +1,12 @@
+<div class="post-container">
+    <div class="post-items">
+        <h2 class="post-title">{{title}}</h2>
+        <div class="post-description">
+            {{post_content}}
+        </div>
+        <div class="post-details">
+            By: <b>{{user.username}}</b> on {{format_date created_at}} | <a href="/post/{{id}}">{{comments.length}} {{format_plural "comment" comments.length}}</a>
+        </div>
+        
+    </div>
+</div>

@@ -1,0 +1,12 @@
+<div class="comment-holder">
+  {{#each this}}
+  <section class="comments form-spacing">
+    <div>
+      {{comment_text}}
+    </div>
+    <div>
+      <p>{{user.username}} on {{format_date created_at}}</p>
+    </div>
+  </section>
+  {{/each}}
+</div>
