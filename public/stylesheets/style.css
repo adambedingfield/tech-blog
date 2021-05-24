@@ -151,3 +151,8 @@ footer p {
     color: white;
     margin-bottom: 10px;
 }
+
+.no-post {
+    text-align: center;
+    font: 28px;
+}
