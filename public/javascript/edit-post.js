@@ -19,10 +19,10 @@ async function editFormHandler(event) {
       });
       
       if (response.ok) {
-        document.location.replace('/dashboard/');
+        document.location.replace('/dashboard');
       } else {
         alert(response.statusText);
       }
   }
   
-  document.querySelector('.delete-btn').addEventListener('click', editFormHandler);
+  document.querySelector('.pure-form').addEventListener('submit', editFormHandler);

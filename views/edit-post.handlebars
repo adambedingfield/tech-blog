@@ -1,9 +1,9 @@
 <h2 class="page-title">Edit</h2>
 <a href="/dashboard" class="pure-button">Cancel</a>
-<form class="pure-form pure-form-stacked form-spacing save">
+<form class="pure-form pure-form-stacked form-spacing">
     <fieldset>
         <label for="post-title">Title</label>
-        <input type="text" value="{{post.title}}"/>
+        <input type="text" name="post-title" value="{{post.title}}"/>
         <label for="post-description">Description</label>
         <input type="text" name="post-description" value="{{post.post_content}}"/>
     </fieldset>
@@ -18,4 +18,3 @@
 
 <script src="/javascript/edit-post.js"></script>
 <script src="/javascript/delete-post.js"></script>
-<script src="/javascript/comment.js"></script>
