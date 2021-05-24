@@ -111,9 +111,9 @@ router.put('/:id', withAuth, (req, res) => {
         console.log(err);
         res.status(500).json(err);
       });
-});
+  });
 
-router.delete('/:id', withAuth, (req, res) => {
+  router.delete('/:id', withAuth, (req, res) => {
     Post.destroy({
       where: {
         id: req.params.id
@@ -130,6 +130,6 @@ router.delete('/:id', withAuth, (req, res) => {
         console.log(err);
         res.status(500).json(err);
       });
-});
+  });
 
 module.exports = router;
