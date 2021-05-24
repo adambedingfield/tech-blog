@@ -9,7 +9,7 @@ https://polar-stream-25812.herokuapp.com/ <br>
 * [User](#user)<br>
 * [Technology](#technology)<br>
 * [Questions](#questions)<br>
-## Home<br>
+## Layout<br>
 Viewing the homepage.
 ![home](/images/homepage.png)<br>
 
