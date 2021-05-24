@@ -4,23 +4,27 @@ const sequelize = require('../config/connection');
 // create our Post model
 class Post extends Model {}
 
-// create fields/columns for Post model
+// setup Post model
 Post.init(
     {
+        //id
       id: {
         type: DataTypes.INTEGER,
         allowNull: false,
         primaryKey: true,
         autoIncrement: true
       },
+      //title content
       title: {
         type: DataTypes.STRING,
         allowNull: false
       },
+      // post content
       post_content: {
         type: DataTypes.TEXT,
         allowNull: true
       },
+      //user id
       user_id: {
         type: DataTypes.INTEGER,
         references: {
@@ -35,6 +39,6 @@ Post.init(
       underscored: true,
       modelName: 'post'
     }
-  );
+);
 
-  module.exports = Post;
+module.exports = Post;

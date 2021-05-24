@@ -1,8 +1,10 @@
+// dependencies and middleware
 const path = require('path');
 const express = require('express');
 const session = require('express-session');
 const exphbs = require('express-handlebars');
 
+//port variables
 const app = express();
 const PORT = process.env.PORT || 3001;
 
@@ -10,6 +12,7 @@ const controllers = require('./controllers');
 const sequelize = require('./config/connection');
 const SequelizeStore = require('connect-session-sequelize')(session.Store);
 
+// setup session
 const sess = {
     secret: 'Super secret secret',
     cookie: {},
@@ -26,6 +29,7 @@ app.use(session(sess));
 
 const hbs = exphbs.create({ helpers });
 
+// connect to handlebars
 app.engine('handlebars', hbs.engine);
 app.set('view engine', 'handlebars');
 

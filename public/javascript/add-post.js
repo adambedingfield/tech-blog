@@ -1,3 +1,4 @@
+// Create post functionality for user created posts
 async function newFormHandler(event) {
     event.preventDefault();
   

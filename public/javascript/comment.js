@@ -1,3 +1,4 @@
+// create post functionality for users leaving comments
 async function commentFormHandler(event) {
     event.preventDefault();
   
@@ -24,7 +25,7 @@ async function commentFormHandler(event) {
         } else {
           alert(response.statusText);
         }
-      }
-  }
+    }
+}
   
-  document.querySelector('.comment-form').addEventListener('submit', commentFormHandler);
+document.querySelector('.comment-form').addEventListener('submit', commentFormHandler);

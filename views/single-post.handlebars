@@ -1,7 +1,6 @@
 <!-- displaying articles -->
 {{> post-info post}}
 
-<!-- displaying form and comments-->
 <!-- only display if logged in -->
 {{#if loggedIn}}
 <form class="comment-form form-spacing">
@@ -16,6 +15,7 @@
 </form>
 {{/if}}
 
+<!-- show post comments -->
 {{> comments post.comments}}
 
 {{#if loggedIn}}

@@ -1,3 +1,4 @@
+// add login functionality for user
 async function loginFormHandler(event) {
     event.preventDefault();
   

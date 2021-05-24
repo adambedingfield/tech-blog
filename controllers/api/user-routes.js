@@ -13,7 +13,7 @@ router.get('/', (req, res) => {
         console.log(err);
         res.status(500).json(err);
       });
-  });
+});
 
 // GET /api/users/1
 router.get('/:id', (req, res) => {
@@ -49,7 +49,7 @@ router.get('/:id', (req, res) => {
         console.log(err);
         res.status(500).json(err);
       });
-  });
+});
 
 // POST /api/users
 router.post('/', (req, res) => {
@@ -71,10 +71,10 @@ router.post('/', (req, res) => {
         res.json(dbUserData);
       });
     });
-  });
+});
 
   // LOGIN
-  router.post('/login', (req, res) => {
+router.post('/login', (req, res) => {
     User.findOne({
       where: {
         email: req.body.email
@@ -103,10 +103,10 @@ router.post('/', (req, res) => {
         res.json({ user: dbUserData, message: 'You are now logged in!' });
       });
     });
-  });
+});
 
 
-  router.post('/logout', (req, res) => {
+router.post('/logout', (req, res) => {
     if (req.session.loggedIn) {
       req.session.destroy(() => {
         res.status(204).end();
@@ -115,7 +115,7 @@ router.post('/', (req, res) => {
     else {
       res.status(404).end();
     }
-  });
+});
 
 // PUT /api/users/1
 router.put('/:id', withAuth, (req, res) => {
@@ -136,7 +136,7 @@ router.put('/:id', withAuth, (req, res) => {
         console.log(err);
         res.status(500).json(err);
       });
-  });
+});
 
 // DELETE /api/users/1
 router.delete('/:id', withAuth, (req, res) => {
@@ -156,6 +156,6 @@ router.delete('/:id', withAuth, (req, res) => {
         console.log(err);
         res.status(500).json(err);
       });
-  });
+});
 
 module.exports = router;
